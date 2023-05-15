@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* AppNameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AppNameTests.m */; };
+		00E356F31AD99517003FC87E /* FlashGameforAndroidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* FlashGameforAndroidTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		6979CD39DDCD9382907CB598 /* libPods-AppName.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5973FD301557575FCC3CA11B /* libPods-AppName.a */; };
-		7AB3B4EF221CF6D4A573D0DA /* libPods-AppName-AppNameTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852FB3F1D63E0DE3E8183F3C /* libPods-AppName-AppNameTests.a */; };
+		6979CD39DDCD9382907CB598 /* libPods-FlashGameforAndroid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5973FD301557575FCC3CA11B /* libPods-FlashGameforAndroid.a */; };
+		7AB3B4EF221CF6D4A573D0DA /* libPods-FlashGameforAndroid-FlashGameforAndroidTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852FB3F1D63E0DE3E8183F3C /* libPods-FlashGameforAndroid-FlashGameforAndroidTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = "AppName";
+			remoteInfo = "FlashGameforAndroid";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* AppNameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppNameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* FlashGameforAndroidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FlashGameforAndroidTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* AppNameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppNameTests.m"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* AppName.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppName.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "AppName/AppDelegate.h"; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppName/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "AppName/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "AppName/Info.plist"; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "AppName/main.m"; sourceTree = "<group>"; };
-		32ECDF2CCA906DA5E633A830 /* Pods-AppName.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppName.release.xcconfig"; path = "Target Support Files/Pods-AppName/Pods-AppName.release.xcconfig"; sourceTree = "<group>"; };
-		5973FD301557575FCC3CA11B /* libPods-AppName.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppName.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		792986F1B1229E84371B6C2A /* Pods-AppName.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppName.debug.xcconfig"; path = "Target Support Files/Pods-AppName/Pods-AppName.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "AppName/LaunchScreen.storyboard"; sourceTree = "<group>"; };
-		852FB3F1D63E0DE3E8183F3C /* libPods-AppName-AppNameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppName-AppNameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A047302FD1679A82BE7C103F /* Pods-AppName-AppNameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppName-AppNameTests.debug.xcconfig"; path = "Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C4417F00A889D3FEEA64E796 /* Pods-AppName-AppNameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppName-AppNameTests.release.xcconfig"; path = "Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* FlashGameforAndroidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FlashGameforAndroidTests.m"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* FlashGameforAndroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlashGameforAndroid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "FlashGameforAndroid/AppDelegate.h"; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FlashGameforAndroid/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "FlashGameforAndroid/Images.xcassets"; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "FlashGameforAndroid/Info.plist"; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "FlashGameforAndroid/main.m"; sourceTree = "<group>"; };
+		32ECDF2CCA906DA5E633A830 /* Pods-FlashGameforAndroid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashGameforAndroid.release.xcconfig"; path = "Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid.release.xcconfig"; sourceTree = "<group>"; };
+		5973FD301557575FCC3CA11B /* libPods-FlashGameforAndroid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlashGameforAndroid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		792986F1B1229E84371B6C2A /* Pods-FlashGameforAndroid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashGameforAndroid.debug.xcconfig"; path = "Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "FlashGameforAndroid/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		852FB3F1D63E0DE3E8183F3C /* libPods-FlashGameforAndroid-FlashGameforAndroidTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlashGameforAndroid-FlashGameforAndroidTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A047302FD1679A82BE7C103F /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashGameforAndroid-FlashGameforAndroidTests.debug.xcconfig"; path = "Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C4417F00A889D3FEEA64E796 /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashGameforAndroid-FlashGameforAndroidTests.release.xcconfig"; path = "Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB3B4EF221CF6D4A573D0DA /* libPods-AppName-AppNameTests.a in Frameworks */,
+				7AB3B4EF221CF6D4A573D0DA /* libPods-FlashGameforAndroid-FlashGameforAndroidTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6979CD39DDCD9382907CB598 /* libPods-AppName.a in Frameworks */,
+				6979CD39DDCD9382907CB598 /* libPods-FlashGameforAndroid.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* AppNameTests */ = {
+		00E356EF1AD99517003FC87E /* FlashGameforAndroidTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* AppNameTests.m */,
+				00E356F21AD99517003FC87E /* FlashGameforAndroidTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = "AppNameTests";
+			path = "FlashGameforAndroidTests";
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* AppName */ = {
+		13B07FAE1A68108700A75B9A /* FlashGameforAndroid */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,15 +93,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = "AppName";
+			name = "FlashGameforAndroid";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5973FD301557575FCC3CA11B /* libPods-AppName.a */,
-				852FB3F1D63E0DE3E8183F3C /* libPods-AppName-AppNameTests.a */,
+				5973FD301557575FCC3CA11B /* libPods-FlashGameforAndroid.a */,
+				852FB3F1D63E0DE3E8183F3C /* libPods-FlashGameforAndroid-FlashGameforAndroidTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,9 +116,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* AppName */,
+				13B07FAE1A68108700A75B9A /* FlashGameforAndroid */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* AppNameTests */,
+				00E356EF1AD99517003FC87E /* FlashGameforAndroidTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C03AF2471CCE8E849E654981 /* Pods */,
@@ -131,8 +131,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* AppName.app */,
-				00E356EE1AD99517003FC87E /* AppNameTests.xctest */,
+				13B07F961A680F5B00A75B9A /* FlashGameforAndroid.app */,
+				00E356EE1AD99517003FC87E /* FlashGameforAndroidTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		C03AF2471CCE8E849E654981 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				792986F1B1229E84371B6C2A /* Pods-AppName.debug.xcconfig */,
-				32ECDF2CCA906DA5E633A830 /* Pods-AppName.release.xcconfig */,
-				A047302FD1679A82BE7C103F /* Pods-AppName-AppNameTests.debug.xcconfig */,
-				C4417F00A889D3FEEA64E796 /* Pods-AppName-AppNameTests.release.xcconfig */,
+				792986F1B1229E84371B6C2A /* Pods-FlashGameforAndroid.debug.xcconfig */,
+				32ECDF2CCA906DA5E633A830 /* Pods-FlashGameforAndroid.release.xcconfig */,
+				A047302FD1679A82BE7C103F /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.debug.xcconfig */,
+				C4417F00A889D3FEEA64E796 /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* AppNameTests */ = {
+		00E356ED1AD99517003FC87E /* FlashGameforAndroidTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AppNameTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FlashGameforAndroidTests" */;
 			buildPhases = (
 				E3FF7580F1022463F16EAC48 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -168,14 +168,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = "AppNameTests";
-			productname = "AppNameTests";
-			productReference = 00E356EE1AD99517003FC87E /* AppNameTests.xctest */;
+			name = "FlashGameforAndroidTests";
+			productname = "FlashGameforAndroidTests";
+			productReference = 00E356EE1AD99517003FC87E /* FlashGameforAndroidTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* AppName */ = {
+		13B07F861A680F5B00A75B9A /* FlashGameforAndroid */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AppName" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FlashGameforAndroid" */;
 			buildPhases = (
 				9B4773BB85A504314B7938C0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -190,9 +190,9 @@
 			);
 			dependencies = (
 			);
-			name = "AppName";
-			productName = "AppName";
-			productReference = 13B07F961A680F5B00A75B9A /* AppName.app */;
+			name = "FlashGameforAndroid";
+			productName = "FlashGameforAndroid";
+			productReference = 13B07F961A680F5B00A75B9A /* FlashGameforAndroid.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AppName" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FlashGameforAndroid" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* AppName */,
-				00E356ED1AD99517003FC87E /* AppNameTests */,
+				13B07F861A680F5B00A75B9A /* FlashGameforAndroid */,
+				00E356ED1AD99517003FC87E /* FlashGameforAndroidTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,15 +271,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6E99E88822C41D6BA151BB12 /* [CP] Copy Pods Resources */ = {
@@ -288,15 +288,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9B4773BB85A504314B7938C0 /* [CP] Check Pods Manifest.lock */ = {
@@ -314,7 +314,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppName-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FlashGameforAndroid-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,15 +327,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppName/Pods-AppName-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid/Pods-FlashGameforAndroid-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3FF7580F1022463F16EAC48 /* [CP] Check Pods Manifest.lock */ = {
@@ -353,7 +353,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppName-AppNameTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FlashGameforAndroid-FlashGameforAndroidTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -366,15 +366,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppName-AppNameTests/Pods-AppName-AppNameTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlashGameforAndroid-FlashGameforAndroidTests/Pods-FlashGameforAndroid-FlashGameforAndroidTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -403,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* AppNameTests.m in Sources */,
+				00E356F31AD99517003FC87E /* FlashGameforAndroidTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* AppName */;
+			target = 13B07F861A680F5B00A75B9A /* FlashGameforAndroid */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,14 +429,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A047302FD1679A82BE7C103F /* Pods-AppName-AppNameTests.debug.xcconfig */;
+			baseConfigurationReference = A047302FD1679A82BE7C103F /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "AppNameTests/Info.plist";
+				INFOPLIST_FILE = "FlashGameforAndroidTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,17 +450,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyun.flashgame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppName.app/AppName";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashGameforAndroid.app/FlashGameforAndroid";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4417F00A889D3FEEA64E796 /* Pods-AppName-AppNameTests.release.xcconfig */;
+			baseConfigurationReference = C4417F00A889D3FEEA64E796 /* Pods-FlashGameforAndroid-FlashGameforAndroidTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "AppNameTests/Info.plist";
+				INFOPLIST_FILE = "FlashGameforAndroidTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -474,20 +474,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyun.flashgame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppName.app/AppName";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashGameforAndroid.app/FlashGameforAndroid";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 792986F1B1229E84371B6C2A /* Pods-AppName.debug.xcconfig */;
+			baseConfigurationReference = 792986F1B1229E84371B6C2A /* Pods-FlashGameforAndroid.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "AppName/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "AppName";
+				INFOPLIST_FILE = "FlashGameforAndroid/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Flash Game for Android";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +498,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyun.flashgame";
-				PRODUCT_NAME = "AppName";
+				PRODUCT_NAME = "FlashGameforAndroid";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -507,13 +507,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32ECDF2CCA906DA5E633A830 /* Pods-AppName.release.xcconfig */;
+			baseConfigurationReference = 32ECDF2CCA906DA5E633A830 /* Pods-FlashGameforAndroid.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "AppName/Info.plist";
-             INFOPLIST_KEY_CFBundleDisplayName = "AppName";
+				INFOPLIST_FILE = "FlashGameforAndroid/Info.plist";
+             INFOPLIST_KEY_CFBundleDisplayName = "Flash Game for Android";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,7 +524,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyun.flashgame";
-				PRODUCT_NAME = "AppName";
+				PRODUCT_NAME = "FlashGameforAndroid";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -658,7 +658,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AppNameTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "FlashGameforAndroidTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AppName" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "FlashGameforAndroid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -676,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AppName" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "FlashGameforAndroid" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

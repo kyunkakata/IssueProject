@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface AppNameTests : XCTestCase
+@interface FlashGameforAndroidTests : XCTestCase
 
 @end
 
-@implementation AppNameTests
+@implementation FlashGameforAndroidTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

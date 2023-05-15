@@ -1,4 +1,8 @@
 {
-  "name": "AppName",
-  "displayName": "AppName"
+  "name": "Flash Game for Android",
+  "displayName": "Flash Game for Android",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-2145364318970341~4026064863",
+    "ios_app_id": "ca-app-pub-2145364318970341~2421312844"
+  }
 }
