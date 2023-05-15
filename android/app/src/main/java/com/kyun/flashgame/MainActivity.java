@@ -1,4 +1,4 @@
-package com.issueproject;
+package com.kyun.flashgame;
 
 import com.facebook.react.ReactActivity;
 
