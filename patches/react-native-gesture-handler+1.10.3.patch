@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.java b/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.java
+index 709727b..2c4cd4d 100644
+--- a/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.java
++++ b/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.java
+@@ -54,6 +54,7 @@ public class RNGestureHandlerButtonViewManager extends
+       setOnClickListener(sDummyClickListener);
+       setClickable(true);
+       setFocusable(true);
++      setClipChildren(false);
+ 
+       mNeedBackgroundUpdate = true;
+     }

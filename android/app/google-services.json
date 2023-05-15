@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "229079796110",
+    "project_id": "flashbrowser4",
+    "storage_bucket": "flashbrowser4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229079796110:android:97903b2e585b3c9796bcdf",
+        "android_client_info": {
+          "package_name": "com.kyun.flashgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229079796110-2odtdpus6gl3dt4k1v790eclu65a471h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kyun.flashgame",
+            "certificate_hash": "7f3fdb7839d11cb957e6cf3b30eaf24413d38774"
+          }
+        },
+        {
+          "client_id": "229079796110-b80rqbadnq2b0na37s5gmbghs5cn3r61.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kyun.flashgame",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "229079796110-74ec4vv7h1mtmlvlre5cqhvgqniafsrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fARuLrl4zoN5rOQjCs8HFOOWO7MgUiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229079796110-74ec4vv7h1mtmlvlre5cqhvgqniafsrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

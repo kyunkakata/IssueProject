@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Flash Game for Android</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">M9WjLm4xpv0x8esMUH9dQkzRqCAOFOcrm3-J9</string>
 </resources>

@@ -1,0 +1,102 @@
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-66-hermes.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-66-hermes.aar
+deleted file mode 100644
+index ba9d8ae..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-66-hermes.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-66-jsc.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-66-jsc.aar
+deleted file mode 100644
+index 64d8dc7..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-66-jsc.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-67-hermes.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-67-hermes.aar
+deleted file mode 100644
+index 29c88fb..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-67-hermes.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-67-jsc.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-67-jsc.aar
+deleted file mode 100644
+index 5caf240..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-67-jsc.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-68-hermes.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-68-hermes.aar
+deleted file mode 100644
+index da1a050..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-68-hermes.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-68-jsc.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-68-jsc.aar
+deleted file mode 100644
+index 706aa7a..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-68-jsc.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-69-hermes.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-69-hermes.aar
+deleted file mode 100644
+index bf0ad09..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-69-hermes.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-69-jsc.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-69-jsc.aar
+deleted file mode 100644
+index f33a22a..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-69-jsc.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-70-hermes.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-70-hermes.aar
+deleted file mode 100644
+index 13668cf..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-70-hermes.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/react-native-reanimated-70-jsc.aar b/node_modules/react-native-reanimated/android/react-native-reanimated-70-jsc.aar
+deleted file mode 100644
+index d8f52a9..0000000
+Binary files a/node_modules/react-native-reanimated/android/react-native-reanimated-70-jsc.aar and /dev/null differ
+diff --git a/node_modules/react-native-reanimated/android/src/main/cpp/NativeProxy.cpp b/node_modules/react-native-reanimated/android/src/main/cpp/NativeProxy.cpp
+index 62b7ced..7d21515 100644
+--- a/node_modules/react-native-reanimated/android/src/main/cpp/NativeProxy.cpp
++++ b/node_modules/react-native-reanimated/android/src/main/cpp/NativeProxy.cpp
+@@ -42,6 +42,10 @@ NativeProxy::NativeProxy(
+ NativeProxy::~NativeProxy() {
+   // removed temporary, new event listener mechanism need fix on the RN side
+   // reactScheduler_->removeEventListener(eventListener_);
++  
++  // cleanup event handler when reloading from codepush
++  auto method = javaPart_->getClass()->getMethod<void()>("unregisterEventHandler");
++  method(javaPart_.get());
+ }
+ 
+ jni::local_ref<NativeProxy::jhybriddata> NativeProxy::initHybrid(
+diff --git a/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NativeProxy.java b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NativeProxy.java
+index f1af5ba..32eddd8 100644
+--- a/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NativeProxy.java
++++ b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NativeProxy.java
+@@ -240,6 +240,11 @@ public class NativeProxy {
+     mNodesManager.registerEventHandler(handler);
+   }
+ 
++  @DoNotStrip
++  private void unregisterEventHandler() {
++    mNodesManager.unregisterEventHandler();
++  }
++
+   @DoNotStrip
+   private int registerSensor(int sensorType, int interval, SensorSetter setter) {
+     return reanimatedSensorContainer.registerSensor(
+diff --git a/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java
+index 2f32309..254442e 100644
+--- a/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java
++++ b/node_modules/react-native-reanimated/android/src/main/java/com/swmansion/reanimated/NodesManager.java
+@@ -550,6 +550,10 @@ public class NodesManager implements EventDispatcherListener {
+     mCustomEventHandler = handler;
+   }
+ 
++  public void unregisterEventHandler() {
++    mCustomEventHandler = null;
++  }
++
+   public void sendEvent(String name, WritableMap body) {
+     mEventEmitter.emit(name, body);
+   }
+diff --git a/node_modules/react-native-reanimated/ios/LayoutReanimation/REAUIManager.mm b/node_modules/react-native-reanimated/ios/LayoutReanimation/REAUIManager.mm
+index 16ed327..9e22409 100644
+--- a/node_modules/react-native-reanimated/ios/LayoutReanimation/REAUIManager.mm
++++ b/node_modules/react-native-reanimated/ios/LayoutReanimation/REAUIManager.mm
+@@ -72,7 +72,10 @@ std::weak_ptr<reanimated::Scheduler> _scheduler;
+         removeAtIndices:(NSArray<NSNumber *> *)removeAtIndices
+                registry:(NSMutableDictionary<NSNumber *, id<RCTComponent>> *)registry
+ {
+-  if (!reanimated::FeaturesConfig::isLayoutAnimationEnabled()) {
++  // if (!reanimated::FeaturesConfig::isLayoutAnimationEnabled()) {
++
++  // Fix for issue cannot click element in FlatList when go back.
++  if (TRUE) {
+     [super _manageChildren:containerTag
+            moveFromIndices:moveFromIndices
+              moveToIndices:moveToIndices

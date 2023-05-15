@@ -12,6 +12,12 @@ target 'FlashGameforAndroid' do
     :hermes_enabled => false
   )
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleMobileAdsMediationFacebook'
+  pod 'GoogleUtilities', :modular_headers => true
+  pod 'FirebaseCore', :modular_headers => true
+
   target 'FlashGameforAndroidTests' do
     inherit! :complete
     # Pods for testing
@@ -27,4 +33,10 @@ target 'FlashGameforAndroid' do
     react_native_post_install(installer)
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
   end
+
+end
+
+# OneSignal Push Notifications SDK
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignalXCFramework', '>= 3.0', '< 4.0'
 end

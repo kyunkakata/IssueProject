@@ -3,6 +3,10 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "Orientation.h"
+#import "Firebase.h"
+#import <CodePush/CodePush.h>
+
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -33,7 +37,7 @@ static void InitializeFlipper(UIApplication *application) {
 
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                                   moduleName:@"Flash Game for Android"
+                                                   moduleName:@"FlashGameforAndroid"
                                             initialProperties:nil];
 
   if (@available(iOS 13.0, *)) {
@@ -47,6 +51,9 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  //Configure firebase
+  [FIRApp configure];
   return YES;
 }
 
@@ -55,8 +62,12 @@ static void InitializeFlipper(UIApplication *application) {
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+  return [CodePush bundleURL];
 #endif
+}
+
+- (UIInterfaceOrientationMask)application: (UIApplication *)application supportedInterfaceOrientationForWindow: (UIWindow *)window {
+  return [Orientation getOrientation];
 }
 
 @end

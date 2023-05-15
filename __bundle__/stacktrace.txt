@@ -1,0 +1,38 @@
+Fatal Exception: com.facebook.react.common.c: TypeError: Cannot read property '_nativeTag' of null, js engine: hermes, stack:
+anonymous@56:95848
+anonymous@143:294
+postMessage@1385:4069
+anonymous@1398:474
+anonymous@758:539
+value@1414:3788
+value@1414:2533
+anonymous@1414:2008
+anonymous@1400:2171
+anonymous@1403:907
+o@56:150
+h@56:293
+g@56:347
+S@56:658
+Ee@56:13156
+W@56:5338
+anonymous@56:13504
+Te@56:94196
+Pe@56:12966
+Ne@56:13343
+receiveEvent@56:13759
+value@37:3556
+anonymous@37:673
+value@37:2503
+value@37:645
+
+       at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.java:134)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.facebook.react.bridge.JavaMethodWrapper.invoke(JavaMethodWrapper.java:148)
+       at com.facebook.react.bridge.JavaModuleWrapper.invoke(JavaModuleWrapper.java:147)
+       at com.facebook.react.bridge.queue.NativeRunnable.run(NativeRunnable.java)
+       at android.os.Handler.handleCallback(Handler.java:883)
+       at android.os.Handler.dispatchMessage(Handler.java:100)
+       at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java)
+       at android.os.Looper.loop(Looper.java:214)
+       at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:37)
+       at java.lang.Thread.run(Thread.java:919)

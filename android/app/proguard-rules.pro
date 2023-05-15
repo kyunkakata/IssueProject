@@ -8,3 +8,16 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+-keepclassmembers class com.android.installreferrer.api.** {
+  *;
+}
+#For hermes
+-keep class com.facebook.hermes.unicode.** { *; }
+-keep class com.facebook.jni.** { *; }
+
+-keep class com.google.android.gms.common.** {*;}
+-keep class com.facebook.react.turbomodule.** { *; }
+-keep class com.swmansion.reanimated.** { *; }
+-keep class com.google.androidgamesdk.** { *; }
+-keep class androidx.core.view.** { *; }
+-keep class com.kyun.fastscanner.BuildConfig { *; }

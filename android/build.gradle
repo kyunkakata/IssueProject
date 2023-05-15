@@ -3,12 +3,11 @@
 buildscript {
     ext {
         buildToolsVersion = "30.0.2"
-         minSdkVersion = 21
+        minSdkVersion = 21
         compileSdkVersion = 33
         targetSdkVersion = 31
         ndkVersion = "21.4.7075529"
         kotlinVersion = "1.6.0"
-        ndkVersion = "21.4.7075529"
         googlePlayServicesAuthVersion = "19.2.0" // google-signin
     }
     repositories {
@@ -37,7 +36,6 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
-
 
         maven { url "https://artifactory.appodeal.com/appodeal" }
 
